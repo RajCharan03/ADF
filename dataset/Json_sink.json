@@ -1,0 +1,25 @@
+{
+	"name": "Json_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_storage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderpath": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Landing_Zone",
+				"fileSystem": "input"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

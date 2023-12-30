@@ -1,0 +1,20 @@
+{
+	"name": "Json_adls_staging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "staging",
+				"fileSystem": "input"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
