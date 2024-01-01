@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "databricks-course-adf-v03"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"ls_formula1_storage_accountKey": {
+			"value": ""
+		},
+		"source_storage_accountKey": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://formula1-key-vault-db.vault.azure.net/"
+		},
+		"AzureKeyVault2_properties_typeProperties_baseUrl": {
+			"value": "https://formula1-key-vault-db.vault.azure.net/"
+		},
+		"ls_databricks_course_ws_properties_typeProperties_existingClusterId": {
+			"value": "0901-031402-fpp3v67q"
+		},
+		"ls_formula1_storage_properties_typeProperties_url": {
+			"value": "https://formularacedl1.dfs.core.windows.net/"
+		},
+		"source_storage_properties_typeProperties_url": {
+			"value": "https://formularacedl1.dfs.core.windows.net/"
+		},
+		"trigger1_properties_pipeline_parameters_p_window_end_date": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/87980a1e-d7aa-4101-9d9a-64587f62fdd4/resourceGroups/databrickscourse-rsg/providers/Microsoft.Storage/storageAccounts/formularacedl1"
+		}
+	}
+}
